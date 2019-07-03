@@ -4,7 +4,9 @@
   "description": "A classless framework for quick mocks",
   "scripts": {
     "build": "webpack --config webpack/webpack.config.prod.js  --colors",
-    "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
+    "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
@@ -13,7 +15,9 @@
   "keywords": [
     "classless",
     "css",
-    "framework"
+    "framework",
+    "semantic",
+    "small"
   ],
   "author": "nielsVoogt",
   "license": "MIT",
@@ -37,6 +41,7 @@
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "vuepress": "^1.0.2",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1",
