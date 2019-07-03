@@ -1,0 +1,43 @@
+// ---------------------------- MIXINS
+
+@mixin placeholder($setAmpersand: false) {
+    @if $setAmpersand {
+        &::-webkit-input-placeholder {
+            @content;
+        }
+        &::-moz-placeholder {
+            @content;
+        }
+        &:-ms-input-placeholder {
+            @content;
+        }
+        &:-moz-placeholder {
+            @content;
+        }
+    } @else {
+        ::-webkit-input-placeholder {
+            @content;
+        }
+        ::-moz-placeholder {
+            @content;
+        }
+        :-ms-input-placeholder {
+            @content;
+        }
+        :-moz-placeholder {
+            @content;
+        }
+    }
+}
+
+@mixin thumb {
+    &::-webkit-slider-thumb {
+        @content;
+    }
+    &::-moz-range-thumb {
+        @content;
+    }
+    &::-ms-thumb {
+        @content;
+    }
+}

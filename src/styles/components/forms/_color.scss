@@ -1,0 +1,13 @@
+// ---------------------------- COLOR
+
+input[type='color'] {
+    padding: $input-padding / 2;
+
+    &::-webkit-color-swatch-wrapper {
+        padding: 0;
+    }
+
+    &::-webkit-color-swatch {
+        border: none;
+    }
+}

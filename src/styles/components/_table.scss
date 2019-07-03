@@ -1,0 +1,39 @@
+// ---------------------------- TABLE
+
+table {
+    width: 100%;
+    table-layout: fixed;
+
+    $table-padding-left-right: 0.25em;
+    $table-padding-top-bottom: 0.5em;
+
+    th {
+        font-weight: bold;
+    }
+
+    td,
+    th {
+        text-align: left;
+        padding-left: $table-padding-left-right;
+        padding-right: $table-padding-left-right;
+        padding-top: $table-padding-top-bottom;
+        padding-bottom: $table-padding-top-bottom;
+        border-bottom: 1px solid rgba(black, 0.1);
+
+        &:first-child {
+            padding-left: $table-padding-left-right * 2;
+        }
+
+        &:last-child {
+            padding-right: $table-padding-left-right * 2;
+        }
+    }
+
+    td {
+        background: white;
+    }
+
+    tr:hover td {
+        background: darken(white, 5%);
+    }
+}

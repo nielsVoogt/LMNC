@@ -1,0 +1,27 @@
+// ---------------------------- VARIABLES
+
+:root {
+    --button-border-radius: 3px;
+    --button-border-width: 0;
+    --button-border-color: #ffffff;
+    --button-border-style: solid;
+    --button-background-color: #5978f3;
+    --button-hover-background-color: #6f8bfb;
+    --button-font-weight: bold;
+    --button-text-transform: uppercase;
+    --button-color: #ffffff;
+
+    // input variables
+
+    --input-border-width: 1px;
+    --input-border-style: solid;
+    --input-border-color: #b0b0b0;
+    --input-border-radius: 3px;
+    --input-icon-color: #333333;
+    --input-icon-stroke-width: 2;
+    --input-placeholder-color: #333333;
+    --input-background-color: #ffffff;
+    --input-focus-color: #bada55;
+
+    --fieldset-margin-bottom: 1em;
+}

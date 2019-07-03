@@ -1,0 +1,36 @@
+$button-padding: 1em;
+
+// ---------------------------- BUTTON
+
+button {
+    padding-top: $button-padding;
+    padding-bottom: $button-padding;
+    padding-left: $button-padding * 1.5;
+    padding-right: $button-padding * 1.5;
+    border-radius: var(--button-border-radius);
+    border-width: var(--button-border-width);
+    border-color: var(--button-border-color);
+    border-style: var(--button-border-style);
+    background: var(--button-background-color);
+    color: var(--button-color);
+    text-transform: var(--button-text-transform);
+    font-weight: var(--button-font-weight);
+
+    svg {
+        display: inline-block;
+        vertical-align: -20%;
+        width: 0.9rem;
+        height: 0.9rem;
+        margin-right: 0.25em;
+        margin-left: -0.5em;
+    }
+
+    &:hover {
+        background: var(--button-hover-background-color);
+        cursor: pointer;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+    }
+}

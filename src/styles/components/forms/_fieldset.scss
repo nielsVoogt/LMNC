@@ -1,0 +1,34 @@
+// ---------------------------- FIELDSET
+
+fieldset {
+    position: relative;
+    margin-bottom: var(--fieldset-margin-bottom);
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: calc(var(--fieldset-margin-bottom) / 4);
+    }
+
+    small {
+        display: block;
+        margin-top: 0.125em;
+    }
+
+    // ---------------------------- ICONFIELD
+
+    svg {
+        position: absolute;
+        width: 1em;
+        height: 1em;
+        bottom: $input-padding * 1.35;
+        display: block;
+        left: $input-padding * 1.125;
+        color: var(--input-icon-color);
+        stroke-width: var(--input-icon-stroke-width);
+
+        + input {
+            padding-left: $input-padding * 3.75;
+        }
+    }
+}

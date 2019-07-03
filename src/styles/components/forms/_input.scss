@@ -1,0 +1,30 @@
+$input-padding: 0.5em;
+
+// ---------------------------- GENERIC INPUT STYLING
+
+input,
+textarea {
+    border-width: var(--input-border-width);
+    border-style: var(--input-border-style);
+    border-color: var(--input-border-color);
+    border-radius: var(--input-border-radius);
+    padding-top: $input-padding;
+    padding-bottom: $input-padding;
+    padding-left: $input-padding;
+    padding-right: $input-padding;
+    background-color: var(--input-background-color);
+    font-size: 1rem;
+    font-family: inherit;
+
+    @include placeholder {
+        color: var(--input-placeholder-color);
+    }
+
+    // add valid/invalid with svgURI
+
+    &:focus {
+        outline-width: 1px;
+        outline-style: solid;
+        outline-color: var(--input-focus-color);
+    }
+}
