@@ -12,3 +12,6 @@ LMNC - A classless framework for quick mocks
 - [ ] Valid/invalid states for input fields
 - [ ] Typographic scales
 - [ ] Example layouts
+- [ ] Dialog
+- [ ] Use region section icm with <header> and <footer> to make a 'card'
+- [ ] Aside?
