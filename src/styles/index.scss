@@ -19,13 +19,55 @@
 @import 'components/button';
 @import 'components/table';
 
-nav,
-#text,
-#embedded {
-    display: none;
+small {
+  font-size: 0.875rem;
+  color: #aaa;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:400|Roboto:400');
+
+html {
+  font-size: 16px;
+}
+
+p {
+  margin-bottom: 1.25em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0 0 1rem;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.802em;
+}
+
+h2 {
+  font-size: 1.602em;
+}
+
+h3 {
+  font-size: 1.424em;
+}
+
+h4 {
+  font-size: 1.266em;
+}
+
+h5 {
+  font-size: 1.125em;
 }
 
 small {
-    font-size: 0.875rem;
-    color: #aaa;
+  font-size: 0.889em;
 }
