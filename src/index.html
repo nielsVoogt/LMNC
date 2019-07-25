@@ -1,430 +1,438 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>webpack starterkit</title>
     </head>
+
     <body>
 
-      <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
-                        Layout
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
-                        Text
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
-                        Forms
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
-                        Examples
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+        <header style="display:none;">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                            Layout
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                            Text
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                            Forms
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                            Examples
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
 
         <main role="main">
-            <section>
+
+            <section style="display:none;">
                 <h1>LMNC</h1>
                 <h2>If you are going for a quick adventure, you might not need all that luggage</h2>
                 <img src="../public/eastwood-downloading.png" />
             </section>
 
-
-
             <section role='content'>
 
 
+                    <section id="forms">
+                            <form>
 
-                <header>
-                  <h1>Page name</h1>
-                  <div>
+                                <fieldset>
+                                    <legend>Fields with icons</legend>
+                                </fieldset>
+
+                                <fieldset>
+                                    <legend>Valid/invalid</legend>
+
+                                    <label for="input-text">Invalid</label>
+                                    <input
+                                        type="email"
+                                        required
+                                        placeholder="eg. chubbylover@hotmail.com"
+                                        value="not a email adress"
+                                    >
+
+                                    <label for="input-text">Valid</label>
+                                    <input
+                                        type="email"
+                                        required
+                                        placeholder="eg. chubbylover@hotmail.com"
+                                        value="niels@gmail.com"
+                                    >
+                                </fieldset>
+
+                                <fieldset>
+                                    <legend>Fields with additional messages</legend>
+                                    <div>
+                                        <label for="input-text">Text with helper</label>
+                                        <input id="input-text" type="text" placeholder="Text Input" />
+                                        <small>Im a helper text for your user</small>
+                                    </div>
+                                </fieldset>
+
+
+                            <label for="input-password">Password</label>
+                            <input value="" type="password" placeholder="Type your Password">
+
+                            <label for="input-webaddress">Web Address</label>
+                            <input value="" type="url" placeholder="http://yoursite.com">
+
+                            <label for="input-emailaddress">Email Address</label>
+                            <input value="" type="email" placeholder="name@email.com">
+
+                            <label for="input-phone">Phone Number</label>
+                            <input value="" type="tel" placeholder="(999) 999-9999">
+
+                            <label for="input-search">Search</label>
+                            <input value="" type="search" placeholder="Enter Search Term">
+
+                            <label for="input-text2">Number Input</label>
+                            <input id="input-text2" type="number" placeholder="Enter a Number">
+
+                            <label for="input-text3" class="error">Error</label>
+                            <input id="input-text3" class="is-error" type="text" placeholder="Text Input">
+
+                            <label for="input-text4" class="valid">Valid</label>
+                            <input id="input-text4" class="is-valid" type="text" placeholder="Text Input">
+
+
+
+                            <label for="select">Select</label>
+                            <select id="select">
+                                <optgroup label="Option Group">
+                                    <option>Option One</option>
+                                    <option>Option Two</option>
+                                    <option>Option Three</option>
+                                </optgroup>
+                            </select>
+
+                            <fieldset>
+                                <label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label>
+                                <label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label>
+                                <label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label>
+                            </fieldset>
+
+                            <fieldset>
+                                <label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked"> Option 1</label>
+                                <label for="radio2"><input id="radio2" name="radio" type="radio" class="radio"> Option 2</label>
+                                <label for="radio3"><input id="radio3" name="radio" type="radio" class="radio"> Option 3</label>
+                            </fieldset>
+
+                            <label for="textarea">Textarea</label>
+                            <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+
+
+
+
+                            <fieldset id="forms__html5">
+                                <legend>HTML5 inputs</legend>
+                                <p>
+                                <label for="ic">Color input</label>
+                                <input type="color" id="ic" value="#000000">
+                                </p>
+                                <p>
+                                <label for="in">Number input</label>
+                                <input type="number" id="in" min="0" max="10" value="5">
+                                </p>
+                                <p>
+                                <label for="ir">Range input</label>
+                                <input type="range" id="ir" value="10">
+                                </p>
+                                <p>
+                                <label for="idd">Date input</label>
+                                <input type="date" id="idd" value="1970-01-01">
+                                </p>
+                                <p>
+                                <label for="idm">Month input</label>
+                                <input type="month" id="idm" value="1970-01">
+                                </p>
+                                <p>
+                                <label for="idw">Week input</label>
+                                <input type="week" id="idw" value="1970-W01">
+                                </p>
+                                <p>
+                                <label for="idt">Datetime input</label>
+                                <input type="datetime" id="idt" value="1970-01-01T00:00:00Z">
+                                </p>
+                                <p>
+                                <label for="idtl">Datetime-local input</label>
+                                <input type="datetime-local" id="idtl" value="1970-01-01T00:00">
+                                </p>
+                            </fieldset>
+
+                            <p>
+                                <button type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                Submit
+                                </button>
+                                <button type="button" disabled>disabled</button>
+                            </p>
+
+                            </form>
+                        </section>
+                <header style="display:none;">
+                    <h1>Page name</h1>
+                    <div>
                     other page options here
-                  </div>
+                    </div>
                 </header>
 
-                <button type="button">Button</button>
+                <article style="display:none;">
+                    <header><h1>Tabular data</h1></header>
+                    <table>
+                        <caption>Table Caption</caption>
+                        <thead>
+                        <tr>
+                            <th>Table Heading 1</th>
+                            <th>Table Heading 2</th>
+                            <th>Table Heading 3</th>
+                            <th>Table Heading 4</th>
+                            <th>Table Heading 5</th>
+                        </tr>
+                        </thead>
+                        <tfoot>
+                        <tr>
+                            <th>Table Footer 1</th>
+                            <th>Table Footer 2</th>
+                            <th>Table Footer 3</th>
+                            <th>Table Footer 4</th>
+                            <th>Table Footer 5</th>
+                        </tr>
+                        </tfoot>
+                        <tbody>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>Table Cell 2</td>
+                            <td>Table Cell 3</td>
+                            <td>Table Cell 4</td>
+                            <td>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                            </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Table Cell 1</td>
+                            <td>Table Cell 2</td>
+                            <td>Table Cell 3</td>
+                            <td>Table Cell 4</td>
+                            <td>Table Cell 5</td>
+                        </tr>
+                        <tr>
+                            <td>Table Cell 1</td>
+                            <td>Table Cell 2</td>
+                            <td>Table Cell 3</td>
+                            <td>Table Cell 4</td>
+                            <td>
+                                <select id="select">
+                                    <optgroup label="Option Group">
+                                    <option>Option One</option>
+                                    <option>Option Two</option>
+                                    <option>Option Three</option>
+                                    </optgroup>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Table Cell 1</td>
+                            <td>Table Cell 2</td>
+                            <td>Table Cell 3</td>
+                            <td>Table Cell 4</td>
+                            <td>Table Cell 5</td>
+                        </tr>
+                        </tbody>
+                    </table>
 
-                <section id="text">
-                  <header><h1>Text</h1></header>
-                  <article id="text__headings">
+                </article>
+
+                <section id="text" style="display: none;">
+                    <header><h1>Text</h1></header>
+                    <article id="text__headings">
                     <header>
-                      <h1>Headings</h1>
+                        <h1>Headings</h1>
                     </header>
                     <div>
-                      <h1>Heading 1</h1>
-                      <h2>Heading 2</h2>
-                      <h3>Heading 3</h3>
-                      <h4>Heading 4</h4>
-                      <h5>Heading 5</h5>
-                      <h6>Heading 6</h6>
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+
+                        <h6>Heading 6</h6>
                     </div>
 
-                  </article>
-                  <article id="text__paragraphs">
+                    </article>
+                    <article id="text__paragraphs">
                     <header><h1>Paragraphs</h1></header>
                     <div>
-                      <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+                        <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
                     </div>
 
-                  </article>
-                  <article id="text__blockquotes">
+                    </article>
+                    <article id="text__blockquotes">
                     <header><h1>Blockquotes</h1></header>
                     <div>
-                      <blockquote>
+                        <blockquote>
                         <p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text.</p>
                         <p>It is typically distinguished visually using indentation and a different typeface or smaller size quotation. It may or may not include a citation, usually placed at the bottom.</p>
                         <cite><a href="#!">Said no one, ever.</a></cite>
-                      </blockquote>
+                        </blockquote>
                     </div>
 
-                  </article>
-                  <article id="text__lists">
+                    </article>
+                    <article id="text__lists">
                     <header><h1>Lists</h1></header>
                     <div>
-                      <h3>Definition list</h3>
-                      <dl>
+                        <h3>Definition list</h3>
+                        <dl>
                         <dt>Definition List Title</dt>
                         <dd>This is a definition list division.</dd>
-                      </dl>
-                      <h3>Ordered List</h3>
-                      <ol>
+                        </dl>
+                        <h3>Ordered List</h3>
+                        <ol>
                         <li>List Item 1</li>
                         <li>List Item 2</li>
                         <li>List Item 3</li>
-                      </ol>
-                      <h3>Unordered List</h3>
-                      <ul>
+                        </ol>
+                        <h3>Unordered List</h3>
+                        <ul>
                         <li>List Item 1</li>
                         <li>List Item 2</li>
                         <li>List Item 3</li>
-                      </ul>
+                        </ul>
                     </div>
 
-                  </article>
-                  <article id="text__hr">
+                    </article>
+                    <article id="text__hr">
                     <header><h1>Horizontal rules</h1></header>
                     <div>
-                      <hr>
+                        <hr>
                     </div>
 
-                  </article>
-                  <article id="text__tables">
-                    <header><h1>Tabular data</h1></header>
-                    <table>
-                      <caption>Table Caption</caption>
-                      <thead>
-                        <tr>
-                          <th>Table Heading 1</th>
-                          <th>Table Heading 2</th>
-                          <th>Table Heading 3</th>
-                          <th>Table Heading 4</th>
-                          <th>Table Heading 5</th>
-                        </tr>
-                      </thead>
-                      <tfoot>
-                        <tr>
-                          <th>Table Footer 1</th>
-                          <th>Table Footer 2</th>
-                          <th>Table Footer 3</th>
-                          <th>Table Footer 4</th>
-                          <th>Table Footer 5</th>
-                        </tr>
-                      </tfoot>
-                      <tbody>
-                        <tr>
-                          <td>Table Cell 1</td>
-                          <td>Table Cell 2</td>
-                          <td>Table Cell 3</td>
-                          <td>Table Cell 4</td>
-                          <td>Table Cell 5</td>
-                        </tr>
-                        <tr>
-                          <td>Table Cell 1</td>
-                          <td>Table Cell 2</td>
-                          <td>Table Cell 3</td>
-                          <td>Table Cell 4</td>
-                          <td>Table Cell 5</td>
-                        </tr>
-                        <tr>
-                          <td>Table Cell 1</td>
-                          <td>Table Cell 2</td>
-                          <td>Table Cell 3</td>
-                          <td>Table Cell 4</td>
-                          <td>Table Cell 5</td>
-                        </tr>
-                        <tr>
-                          <td>Table Cell 1</td>
-                          <td>Table Cell 2</td>
-                          <td>Table Cell 3</td>
-                          <td>Table Cell 4</td>
-                          <td>Table Cell 5</td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                  </article>
-                  <article id="text__code">
+                    </article>
+                    <article id="text__code">
                     <header><h1>Code</h1></header>
                     <div>
-                      <p><strong>Keyboard input:</strong> <kbd>Cmd</kbd></p>
-                      <p><strong>Inline code:</strong> <code>&lt;div&gt;code&lt;/div&gt;</code></p>
-                      <p><strong>Sample output:</strong> <samp>This is sample output from a computer program.</samp></p>
-                      <h2>Pre-formatted text</h2>
-                      <pre>P R E F O R M A T T E D T E X T
-          ! " # $ % &amp; ' ( ) * + , - . /
-          0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
-          @ A B C D E F G H I J K L M N O
-          P Q R S T U V W X Y Z [ \ ] ^ _
-          ` a b c d e f g h i j k l m n o
-          p q r s t u v w x y z { | } ~ </pre>
+                        <p><strong>Keyboard input:</strong> <kbd>Cmd</kbd></p>
+                        <p><strong>Inline code:</strong> <code>&lt;div&gt;code&lt;/div&gt;</code></p>
+                        <p><strong>Sample output:</strong> <samp>This is sample output from a computer program.</samp></p>
+                        <h2>Pre-formatted text</h2>
+                        <pre>P R E F O R M A T T E D T E X T
+            ! " # $ % &amp; ' ( ) * + , - . /
+            0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+            @ A B C D E F G H I J K L M N O
+            P Q R S T U V W X Y Z [ \ ] ^ _
+            ` a b c d e f g h i j k l m n o
+            p q r s t u v w x y z { | } ~ </pre>
                     </div>
 
-                  </article>
-                  <article id="text__inline">
+                    </article>
+                    <article id="text__inline">
                     <header><h1>Inline elements</h1></header>
                     <div>
-                      <p><a href="#!">This is a text link</a>.</p>
-                      <p><strong>Strong is used to indicate strong importance.</strong></p>
-                      <p><em>This text has added emphasis.</em></p>
-                      <p>The <b>b element</b> is stylistically different text from normal text, without any special importance.</p>
-                      <p>The <i>i element</i> is text that is offset from the normal text.</p>
-                      <p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.</p>
-                      <p><del>This text is deleted</del> and <ins>This text is inserted</ins>.</p>
-                      <p><s>This text has a strikethrough</s>.</p>
-                      <p>Superscript<sup>®</sup>.</p>
-                      <p>Subscript for things like H<sub>2</sub>O.</p>
-                      <p><small>This small text is small for for fine print, etc.</small></p>
-                      <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
-                      <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q></p>
-                      <p><cite>This is a citation.</cite></p>
-                      <p>The <dfn>dfn element</dfn> indicates a definition.</p>
-                      <p>The <mark>mark element</mark> indicates a highlight.</p>
-                      <p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
-                      <p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
+                        <p><a href="#!">This is a text link</a>.</p>
+                        <p><strong>Strong is used to indicate strong importance.</strong></p>
+                        <p><em>This text has added emphasis.</em></p>
+                        <p>The <b>b element</b> is stylistically different text from normal text, without any special importance.</p>
+                        <p>The <i>i element</i> is text that is offset from the normal text.</p>
+                        <p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.</p>
+                        <p><del>This text is deleted</del> and <ins>This text is inserted</ins>.</p>
+                        <p><s>This text has a strikethrough</s>.</p>
+                        <p>Superscript<sup>®</sup>.</p>
+                        <p>Subscript for things like H<sub>2</sub>O.</p>
+                        <p><small>This small text is small for for fine print, etc.</small></p>
+                        <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+                        <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q></p>
+                        <p><cite>This is a citation.</cite></p>
+                        <p>The <dfn>dfn element</dfn> indicates a definition.</p>
+                        <p>The <mark>mark element</mark> indicates a highlight.</p>
+                        <p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
+                        <p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
                     </div>
 
-                  </article>
-                  <article id="text__comments">
+                    </article>
+                    <article id="text__comments">
                     <header><h1>HTML Comments</h1></header>
                     <div>
-                      <p>There is comment here: <!--This comment should not be displayed--></p>
-                      <p>There is a comment spanning multiple tags and lines below here.</p>
+                        <p>There is comment here: <!--This comment should not be displayed--></p>
+                        <p>There is a comment spanning multiple tags and lines below here.</p>
                     </div>
-                     
-                  </article>
+                       
+                    </article>
                 </section>
 
-                <section id="embedded">
-                  <header><h1>Embedded content</h1></header>
-                  <article id="embedded__images">
+                <section id="embedded" style="display:none;">
+                    <header><h1>Embedded content</h1></header>
+                    <article id="embedded__images">
                     <header><h2>Images</h2></header>
                     <div>
-                      <h3>No <code>&lt;figure&gt;</code> element</h3>
-                      <p><img src="http://placekitten.com/480/480" alt="Image alt text"></p>
-                      <h3>Wrapped in a <code>&lt;figure&gt;</code> element, no <code>&lt;figcaption&gt;</code></h3>
-                      <figure><img src="http://placekitten.com/420/420" alt="Image alt text"></figure>
-                      <h3>Wrapped in a <code>&lt;figure&gt;</code> element, with a <code>&lt;figcaption&gt;</code></h3>
-                      <figure>
+                        <h3>No <code>&lt;figure&gt;</code> element</h3>
+                        <p><img src="http://placekitten.com/480/480" alt="Image alt text"></p>
+                        <h3>Wrapped in a <code>&lt;figure&gt;</code> element, no <code>&lt;figcaption&gt;</code></h3>
+                        <figure><img src="http://placekitten.com/420/420" alt="Image alt text"></figure>
+                        <h3>Wrapped in a <code>&lt;figure&gt;</code> element, with a <code>&lt;figcaption&gt;</code></h3>
+                        <figure>
                         <img src="http://placekitten.com/420/420" alt="Image alt text">
                         <figcaption>Here is a caption for this image.</figcaption>
-                      </figure>
+                        </figure>
                     </div>
 
-                  </article>
-                  <article id="embedded__audio">
+                    </article>
+                    <article id="embedded__audio">
                     <header><h2>Audio</h2></header>
                     <div><audio controls="">audio</audio></div>
 
-                  </article>
-                  <article id="embedded__video">
+                    </article>
+                    <article id="embedded__video">
                     <header><h2>Video</h2></header>
                     <div><video controls="">video</video></div>
 
-                  </article>
-                  <article id="embedded__canvas">
+                    </article>
+                    <article id="embedded__canvas">
                     <header><h2>Canvas</h2></header>
                     <div><canvas>canvas</canvas></div>
 
-                  </article>
-                  <article id="embedded__meter">
+                    </article>
+                    <article id="embedded__meter">
                     <header><h2>Meter</h2></header>
                     <div><meter value="2" min="0" max="10">2 out of 10</meter></div>
 
-                  </article>
-                  <article id="embedded__progress">
+                    </article>
+                    <article id="embedded__progress">
                     <header><h2>Progress</h2></header>
                     <div><progress>progress</progress></div>
-                  </article>
+                    </article>
 
                 </section>
 
-                <section id="forms">
-                  <header><h1>Form elements</h1></header>
-
-                  <form>
-
-                    <fieldset>
-                      <label for="input-text">Text Input</label>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                      <input id="input-text" type="text" placeholder="Text Input">
-                    </fieldset>
-
-                    <fieldset>
-                      <label for="input-text">Text Input</label>
-                      <input id="input-text" type="text" placeholder="Text Input">
-                      <small>Im a helper text for your user</small>
-                    </fieldset>
-
-                    <fieldset>
-                      <label for="input-password">Password</label>
-                      <input id="input-password" type="password" placeholder="Type your Password">
-                    </fieldset>
-
-                    <fieldset>
-                      <label for="input-webaddress">Web Address</label>
-                      <input id="input-webaddress" type="url" placeholder="http://yoursite.com">
-                    </fieldset>
-
-                    <fieldset>
-                      <label for="input-emailaddress">Email Address</label>
-                      <input id="input-emailaddress" type="email" placeholder="name@email.com">
-                    </fieldset>
-
-                    <fieldset>
-                      <label for="input-phone">Phone Number</label>
-                      <input id="input-phone" type="tel" placeholder="(999) 999-9999">
-                    </fieldset>
-
-                    <fieldset>
-                      <label for="input-search">Search</label>
-                      <input id="input-search" type="search" placeholder="Enter Search Term">
-                    </fieldset>
-
-                    <fieldset>
-                      <label for="input-text2">Number Input</label>
-                      <input id="input-text2" type="number" placeholder="Enter a Number">
-                    </fieldset>
-
-                    <fieldset>
-                      <label for="input-text3" class="error">Error</label>
-                      <input id="input-text3" class="is-error" type="text" placeholder="Text Input">
-                    </fieldset>
-
-                    <fieldset>
-                      <label for="input-text4" class="valid">Valid</label>
-                      <input id="input-text4" class="is-valid" type="text" placeholder="Text Input">
-                    </fieldset>
-
-
-
-                    <fieldset id="forms__select">
-                      <label for="select">Select</label>
-                      <select id="select">
-                        <optgroup label="Option Group">
-                          <option>Option One</option>
-                          <option>Option Two</option>
-                          <option>Option Three</option>
-                        </optgroup>
-                      </select>
-                    </fieldset>
-
-
-                    <fieldset id="forms__checkbox">
-                      <legend>Checkboxes</legend>
-                      <ul class="list list--bare">
-                        <li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></li>
-                        <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></li>
-                        <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li>
-                      </ul>
-                    </fieldset>
-
-                    <fieldset id="forms__radio">
-                      <legend>Radio buttons</legend>
-                      <ul class="list list--bare">
-                        <li><label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked"> Option 1</label></li>
-                        <li><label for="radio2"><input id="radio2" name="radio" type="radio" class="radio"> Option 2</label></li>
-                        <li><label for="radio3"><input id="radio3" name="radio" type="radio" class="radio"> Option 3</label></li>
-                      </ul>
-                    </fieldset>
-
-                    <fieldset id="forms__textareas">
-                      <legend>Textareas</legend>
-                      <p>
-                        <label for="textarea">Textarea</label>
-                        <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
-                      </p>
-                    </fieldset>
-
-                    <fieldset id="forms__html5">
-                      <legend>HTML5 inputs</legend>
-                      <p>
-                        <label for="ic">Color input</label>
-                        <input type="color" id="ic" value="#000000">
-                      </p>
-                      <p>
-                        <label for="in">Number input</label>
-                        <input type="number" id="in" min="0" max="10" value="5">
-                      </p>
-                      <p>
-                        <label for="ir">Range input</label>
-                        <input type="range" id="ir" value="10">
-                      </p>
-                      <p>
-                        <label for="idd">Date input</label>
-                        <input type="date" id="idd" value="1970-01-01">
-                      </p>
-                      <p>
-                        <label for="idm">Month input</label>
-                        <input type="month" id="idm" value="1970-01">
-                      </p>
-                      <p>
-                        <label for="idw">Week input</label>
-                        <input type="week" id="idw" value="1970-W01">
-                      </p>
-                      <p>
-                        <label for="idt">Datetime input</label>
-                        <input type="datetime" id="idt" value="1970-01-01T00:00:00Z">
-                      </p>
-                      <p>
-                        <label for="idtl">Datetime-local input</label>
-                        <input type="datetime-local" id="idtl" value="1970-01-01T00:00">
-                      </p>
-                    </fieldset>
-
-                    <p>
-                      <button type="submit">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                        Submit
-                      </button>
-                      <button type="button" disabled>disabled</button>
-                    </p>
-
-                  </form>
-                </section>
 
                 <footer>
-                  Made with LMNC
+                    Made with LMNC
                 </footer>
 
             </section>
         </main>
-
     </body>
 </html>

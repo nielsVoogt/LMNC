@@ -2,6 +2,31 @@ $input-padding: 0.5em;
 
 // ---------------------------- GENERIC INPUT STYLING
 
+form {
+    background: white;
+    padding: 2em;
+    max-width: 600px;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: .25em;
+}
+
+fieldset {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+
+    legend  {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.125rem;
+        margin-bottom: .5em;
+        color: black;
+    }
+}
+
 input,
 textarea {
     border-width: var(--input-border-width);
@@ -15,16 +40,73 @@ textarea {
     background-color: var(--input-background-color);
     font-size: 1rem;
     font-family: inherit;
+    margin-bottom: 1em;
+    width: 100%;
 
     @include placeholder {
         color: var(--input-placeholder-color);
     }
 
+    &:focus {
+        outline-width: 0;
+        border-color: var(--input-focus-color);
+    }
+
     // add valid/invalid with svgURI
 
-    &:focus {
-        outline-width: 1px;
-        outline-style: solid;
-        outline-color: var(--input-focus-color);
+    &[required] {
+
+        &:invalid {
+            border-color: red;
+            background-color: rgba(red, .1);
+        }
+
+        &:valid {
+            border-color: green;
+            background-color: rgba(green, .1);
+        }
+    }
+
+    + small {
+        display: block;
+        position: relative;
+        margin-top: -1em;
+        margin-bottom: .75em;
+    }
+}
+
+@mixin icon($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: left $input-padding center;
+    padding-left: calc((#{$input-padding} * 2) + var(--input-icon-size));
+    background-size: var(--input-icon-size);
+}
+
+input {
+    &[type='password'] {
+        letter-spacing: 3px;
+
+        @include placeholder(true) {
+            letter-spacing: 0;
+        }
+    }
+}
+
+input {
+    &[type='email'] {
+        @include icon("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-mail'%3E%3Cpath d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'%3E%3C/path%3E%3Cpolyline points='22,6 12,13 2,6'%3E%3C/polyline%3E%3C/svg%3E");
+    }
+
+    &[type='tel'] {
+        @include icon("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-phone'%3E%3Cpath d='M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z'%3E%3C/path%3E%3C/svg%3E");
+    }
+
+    &[type='search'] {
+        @include icon("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-search'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");
+    }
+
+    &[type='password'] {
+        @include icon("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23aaaaaa' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-lock'%3E%3Crect x='3' y='11' width='18' height='11' rx='2' ry='2'%3E%3C/rect%3E%3Cpath d='M7 11V7a5 5 0 0 1 10 0v4'%3E%3C/path%3E%3C/svg%3E");
     }
 }
