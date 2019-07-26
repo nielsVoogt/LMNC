@@ -1,3 +1,4 @@
+
 // ---------------------------- MIXINS
 
 @mixin placeholder($setAmpersand: false) {
@@ -30,14 +31,10 @@
     }
 }
 
-@mixin thumb {
-    &::-webkit-slider-thumb {
-        @content;
-    }
-    &::-moz-range-thumb {
-        @content;
-    }
-    &::-ms-thumb {
-        @content;
-    }
+@mixin icon($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: left $input-padding center;
+    padding-left: calc((#{$input-padding} * 2) + var(--input-icon-size));
+    background-size: var(--input-icon-size);
 }

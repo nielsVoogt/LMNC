@@ -15,17 +15,57 @@
 // ---------------------------- FORMS
 
 @import 'components/forms/input';
-@import 'components/forms/color';
-@import 'components/forms/fieldset';
-@import 'components/forms/password';
-@import 'components/forms/range';
-@import 'components/forms/select';
 
 // ---------------------------- COMPONENTS
 
 @import 'components/button';
 @import 'components/table';
 
+
+details {
+	width: 100%;
+  position: relative;
+
+  &[open] svg {
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+
+	svg {
+    display: block;
+    height: 1.5em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .3s ease-out;
+    width: 1.5em;
+    opacity: .5;
+	}
+
+	summary {
+    list-style-image: none;
+    padding-right: 2.5em;
+
+		&:focus { outline: none; }
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::-moz-list-bullet {
+      list-style-type: none;
+      display: block;
+   }
+	}
+
+  &:hover {
+    cursor: pointer;
+
+    svg {
+      opacity: 1;
+    }
+	}
+}
 
 
 
