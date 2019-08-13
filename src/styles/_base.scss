@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat:900|Open+Sans:400,600&display=swap');
 
 // ---------------------------- BASE
@@ -13,7 +12,6 @@ html {
   box-sizing: border-box;
 }
 
-
 body {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
@@ -24,12 +22,17 @@ body {
 
 // --------------------- HEADER
 
-ol {
-	list-style-type: decimal;
+ol[role='list'] {
+  list-style-type: decimal;
 }
 
-ul {
+ul[role='list'] {
   list-style-type: disc;
+}
+
+ul[role='list'] li,
+ol[role='list'] li {
+  margin-left: 1.125em;
 }
 
 svg {
@@ -45,16 +48,11 @@ main {
   padding: 0 2em;
 }
 
-ul li,
-ol li {
-  margin-left: 1.125em;
-}
-
 %title {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.125rem;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   color: black;
 }
 
@@ -84,12 +82,12 @@ ol li {
 }
 
 section {
-  &[aria-labelledby="card"] {
+  &[aria-labelledby='card'] {
     background: white;
     border-radius: 10px;
     border: 1px solid #dbdbdb;
     border-bottom-width: 2px;
-    box-shadow: 0 0 20px rgba(black, .1);
+    box-shadow: 0 0 20px rgba(black, 0.1);
     margin-bottom: 2em;
     padding: 1.5em;
 

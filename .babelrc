@@ -10,6 +10,14 @@
   ],
   "plugins": [
     "@babel/plugin-syntax-dynamic-import",
-    "@babel/plugin-proposal-class-properties"
+    "@babel/plugin-proposal-class-properties",
+    [
+      "prismjs",
+      {
+        "languages": ["markup"],
+        "theme": "okaidia",
+        "css": true
+      }
+    ]
   ]
 }

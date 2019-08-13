@@ -1,3 +1,5 @@
 import '../styles/index.scss';
+import Prism from 'prismjs';
 
-console.log('webpack starterkit');
+// Highlight all matching syntax
+Prism.highlightAll();

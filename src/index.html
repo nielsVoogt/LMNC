@@ -68,13 +68,11 @@
                 </footer>
             </section>
 
-
-
                 <section role="region" aria-labelledby="card">
                     <header>Lists</header>
 
                     <label>Ordered List</label>
-                    <ol>
+                    <ol role="list">
                         <li>List Item 1</li>
                         <li>List Item 2</li>
                         <li>List Item 3</li>
@@ -83,7 +81,7 @@
                     <br>
 
                     <label>Unordered List</label>
-                    <ul>
+                    <ul role="list">
                         <li>List Item 1</li>
                         <li>List Item 2</li>
                         <li>List Item 3</li>
@@ -95,7 +93,7 @@
                                 Show me the code for this
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                             </summary>
-                            {{ CODE HERE }}
+                            <pre class="language-markup" data-src="../public/snippets/list.html"></pre>
                         </details>
                     </footer>
                 </section>
@@ -124,7 +122,7 @@
                             Show me the code for this
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                         </summary>
-                        {{ CODE HERE }}
+                        <pre class="language-markup" data-src="../public/snippets/fields-with-icons.html"></pre>
                     </details>
                 </footer>
             </section>
@@ -333,70 +331,55 @@
 
                 <article>
                     <header><h1>Tabular data</h1></header>
+
                     <table>
-                        <caption>Table Caption</caption>
                         <thead>
-                        <tr>
-                            <th>Table Heading 1</th>
-                            <th>Table Heading 2</th>
-                            <th>Table Heading 3</th>
-                            <th>Table Heading 4</th>
-                            <th>Table Heading 5</th>
-                        </tr>
+                            <tr>
+                                <th></th>
+                                <th>Table Heading 2</th>
+                                <th>Table Heading 3</th>
+                            </tr>
                         </thead>
-                        <tfoot>
-                        <tr>
-                            <th>Table Footer 1</th>
-                            <th>Table Footer 2</th>
-                            <th>Table Footer 3</th>
-                            <th>Table Footer 4</th>
-                            <th>Table Footer 5</th>
-                        </tr>
-                        </tfoot>
+
                         <tbody>
-                        <tr>
-                            <td><input type="checkbox" /></td>
-                            <td>Table Cell 2</td>
-                            <td>Table Cell 3</td>
-                            <td>Table Cell 4</td>
-                            <td>
-                            <a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
-                            </a>
-                            <a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
-                            </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Table Cell 1</td>
-                            <td>Table Cell 2</td>
-                            <td>Table Cell 3</td>
-                            <td>Table Cell 4</td>
-                            <td>Table Cell 5</td>
-                        </tr>
-                        <tr>
-                            <td>Table Cell 1</td>
-                            <td>Table Cell 2</td>
-                            <td>Table Cell 3</td>
-                            <td>Table Cell 4</td>
-                            <td>
-                                <select id="select">
-                                    <optgroup label="Option Group">
-                                    <option>Option One</option>
-                                    <option>Option Two</option>
-                                    <option>Option Three</option>
-                                    </optgroup>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Table Cell 1</td>
-                            <td>Table Cell 2</td>
-                            <td>Table Cell 3</td>
-                            <td>Table Cell 4</td>
-                            <td>Table Cell 5</td>
-                        </tr>
+                            <tr>
+                                <td><input type="checkbox" /></td>
+                                <td>Table Cell 2</td>
+                                <td>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td>Table Cell 2</td>
+                                <td>Table Cell 3</td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td>Table Cell 2</td>
+                                <td>
+                                    <select id="select">
+                                        <optgroup label="Option Group">
+                                        <option>Option One</option>
+                                        <option>Option Two</option>
+                                        <option>Option Three</option>
+                                        </optgroup>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td>Table Cell 2</td>
+                                <td>Table Cell 3</td>
+                            </tr>
                         </tbody>
                     </table>
 
