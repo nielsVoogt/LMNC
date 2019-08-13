@@ -83,22 +83,23 @@ textarea {
 }
 
 blockquote {
-    padding-left: 1em;
     position: relative;
 
     &:before {
-        quotes: "\201C""\201D""\2018""\2019";
+        quotes: "\201C";
         position: absolute;
     }
 
     cite {
         font-size: .9rem;
         font-style: italic;
+        opacity: .75;
     }
 }
 
 textarea {
     resize: vertical;
+    min-height: 40px;
 }
 
 // ------------------- COLOR, PASSWORD
