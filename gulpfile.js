@@ -35,7 +35,7 @@ var autoprefixerOptions = {
 // --------------------------------------------------- SASS TASK
 
 gulp.task('sass', () => {
-    return gulp.src('./sass/**/*.scss')
+    return gulp.src('./scss/**/*.scss')
         .pipe(sass(sassOptions).on('error', sass.logError))
         .pipe(autoprefixer(autoprefixerOptions))
         .pipe(gulp.dest('./public/css/'));
